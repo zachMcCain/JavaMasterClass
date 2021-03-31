@@ -34,5 +34,20 @@ public class Main {
 
     // short bigShortLiteralValue = 32768;
 
+
+    // CASTING
+    int myTotal = (myMinIntValue / 2);
+
+    byte myNewByteValue = (byte) (myMinByteValue / 2); // Using casting here because otherwise myMinByteValue is treated as an int.
+
+    short myNewShortValue = (short) (myMinShortValue / 2);
+
+
+    byte smallNum = 5;
+    short smallishNum = 58;
+    int regularNum = 2309;
+    long bigNum = 50000 + (10 * (smallNum + smallishNum + regularNum));
+
+    System.out.println("This is my big number: " + bigNum);
   }
 }
